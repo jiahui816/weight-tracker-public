@@ -1,3 +1,9 @@
+Weight Tracker Application
+
+1. [] Build UI
+2. [] Logical Flow
+3. [] Initialise DB
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
