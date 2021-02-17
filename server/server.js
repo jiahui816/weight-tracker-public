@@ -1,8 +1,11 @@
 import express from "express";
 import mongoose from "mongoose";
 import Weight from "./Schema/dbWeight.js";
+import bodyParser from "body-parser";
 
 const app = express();
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 const router = express.Router();
 const port = process.env.PORT || 9000;
 const connection_url =
@@ -35,5 +38,16 @@ router.route("/fetch").get(function (req, res) {
   });
 });
 
+app.post("/submit", (req, res) => {
+  let weight = new Weight(req.body);
+  weight
+    .save()
+    .then((item) => {
+      res.send("item saved to database");
+    })
+    .catch((err) => {
+      res.status(400).send("unable to save to database");
+    });
+});
 //listener
 app.listen(port, () => console.log(`Listening on localhost:${port}`));
