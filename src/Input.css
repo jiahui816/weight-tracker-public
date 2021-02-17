@@ -1,0 +1,14 @@
+.input {
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+  justify-content: center;
+}
+
+.input__weight {
+  margin-right: 10px;
+}
+
+.input__submit > .MuiButtonBase-root {
+  padding: 16px;
+}

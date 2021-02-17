@@ -1,0 +1,14 @@
+.app__bottom {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+}
+
+.app__list {
+  flex: 0.5;
+  padding-right: 30px;
+}
+
+.app__bmi {
+  flex: 0.5;
+}

@@ -1,0 +1,11 @@
+.bmi__result {
+  padding-top: 12px;
+}
+
+.bmi__input > .MuiButtonBase-root {
+  padding: 16px;
+}
+
+.bmi__input {
+  padding-top: 20px;
+}

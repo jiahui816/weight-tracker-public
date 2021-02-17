@@ -1,0 +1,24 @@
+.header {
+  border-bottom: 1px solid gray;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+}
+
+.header__right {
+  display: flex;
+  align-items: center;
+  background: transparent;
+}
+
+.header__right > h2 {
+  margin-right: 10px;
+  background: transparent;
+}
+
+.header > h1 {
+  background: transparent;
+}
